@@ -21,6 +21,10 @@ const config = {
       fontFamily: {
         poppins: ["var(--font-poppins)", "sans"],
       },
+      backgroundImage: {
+        'mobile': `url("/assets/images/hero-banner-mobile.png")`,
+        'desktop': `url("/assets/images/hero-banner.jpg")`,
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -25,7 +25,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <div className="hidden md:flex justify-center items-center gap-1 xl:gap-10 font-medium text-base">
+        <div className="hidden md:flex justify-center items-center gap-1 xl:gap-5 font-medium text-base">
           {navbarLinks.map((link) => {
             const active =
               pathname === link.path ? "bg-black text-[#F9B31B]" : "";

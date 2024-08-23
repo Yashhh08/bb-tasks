@@ -277,7 +277,7 @@ const ContactForm = () => {
             </div>
           ))}
 
-          <div className="flex max-sm:justify-center items-center">
+          <div className="flex justify-center items-center">
             <Button
               onClick={() => append({ key: "", value: "" })}
               className="rounded-xl bg-[#F9B31B] text-black transition-all hover:text-white text-base"

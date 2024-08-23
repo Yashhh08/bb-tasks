@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import ThemeProvider from "@/components/shared/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,8 +25,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${poppins.variable} font-poppins`}>
-        <main>{children}</main>
-        <Toaster />
+        <ThemeProvider>
+          <main>{children}</main>
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );

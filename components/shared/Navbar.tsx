@@ -43,7 +43,7 @@ const Navbar = () => {
                     </span>
                   </p>
 
-                  <div className="hidden group-hover/main:flex transition-all bg-gradient-to-b from-white to-yellow-100 w-[500px] h-fit absolute left-[50%] top-8 transform translate-x-[-50%] rounded-xl flex-col gap-1">
+                  <div className="hidden z-10 group-hover/main:flex transition-all bg-gradient-to-b from-white to-yellow-100 w-[500px] h-fit absolute left-[50%] top-8 transform translate-x-[-50%] rounded-xl flex-col gap-1">
                     {workLinks.map((workLink) => {
                       return (
                         <Link
@@ -86,14 +86,13 @@ const Navbar = () => {
         <Link href={"/contact-us"} className="hidden md:block">
           <Button
             size={"lg"}
-            className="rounded-xl text-[#F9B31B] hover:bg-white transition-all hover:text-black text-base"
+            className="rounded-xl text-[#F9B31B] dark:text-black hover:dark:text-[#F9B31B] hover:dark:bg-black hover:bg-white transition-all hover:text-black text-base"
           >
             Contact Us
           </Button>
         </Link>
 
         <div className="md:hidden">
-          {" "}
           <MobileNav />
         </div>
       </div>

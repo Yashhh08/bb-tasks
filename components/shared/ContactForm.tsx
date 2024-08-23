@@ -260,12 +260,12 @@ const ContactForm = () => {
               <input
                 {...form.register(`dynamicFields.${index}.key`)}
                 placeholder="Field Name"
-                className="flex-1 border-0 border-b-2 rounded-none"
+                className="flex-1 border-0 border-b-2 rounded-none bg-transparent"
               />
               <input
                 {...form.register(`dynamicFields.${index}.value`)}
                 placeholder="Field Value"
-                className="flex-1 border-0 border-b-2 rounded-none"
+                className="flex-1 border-0 border-b-2 rounded-none bg-transparent"
               />
               <button
                 type="button"
@@ -280,7 +280,7 @@ const ContactForm = () => {
           <div className="flex justify-center items-center">
             <Button
               onClick={() => append({ key: "", value: "" })}
-              className="rounded-xl bg-[#F9B31B] text-black transition-all hover:text-white text-base"
+              className="rounded-xl bg-[#F9B31B] text-black hover:dark:text-black transition-all hover:text-white text-base"
               size={"sm"}
             >
               Add More
@@ -298,7 +298,7 @@ const ContactForm = () => {
         )}
 
         <Button
-          className="rounded-xl text-[#F9B31B] transition-all hover:text-white text-base w-full text-center"
+          className="rounded-xl text-[#F9B31B] dark:text-black transition-all hover:text-white text-base w-full text-center hover:dark:text-black"
           disabled={sending}
           type="submit"
         >

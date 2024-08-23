@@ -85,7 +85,7 @@ const MobileNav = () => {
           <Link href={"/contact-us"}>
             <Button
               size={"lg"}
-              className="rounded-xl text-[#F9B31B] hover:bg-white transition-all hover:text-black text-base w-full"
+              className="rounded-xl text-[#F9B31B] dark:text-black hover:bg-white transition-all hover:text-black text-base w-full"
             >
               Contact Us
             </Button>

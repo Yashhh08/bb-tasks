@@ -15,6 +15,7 @@ const FormSection = () => {
           alt="bus"
           width={350}
           height={350}
+          className="dark:backdrop-invert dark:rounded-xl"
         />
 
         <p className="font-semibold text-3xl md:text-5xl text-center">

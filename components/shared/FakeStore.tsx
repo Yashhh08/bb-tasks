@@ -12,7 +12,7 @@ const FakeStore = async () => {
 
   return (
     <div>
-      <h1 className="text-2xl font-semibold mb-4 text-center">
+      <h1 className="text-3xl font-semibold mb-4 text-center">
         Fake Store Products
       </h1>
 

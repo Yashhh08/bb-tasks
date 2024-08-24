@@ -88,31 +88,43 @@ const ProductList = ({
         </Button>
       </div>
 
+      <p className="text-center">
+        Browse our complete range of products to find exactly what you need.
+        From gadgets to daily essentials, we have something for everyone. Enjoy
+        great deals and quality all in one place!
+      </p>
+
       <div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-11/12 m-auto">
-          {filteredProducts.map((product) => (
-            <Link
-              key={product.id}
-              href={`/products/${product.id}`}
-              className="flex flex-col justify-between gap-2 p-3 border-2 border-[#F9B31B] rounded-md text-center hover:shadow-2xl hover:scale-95 transition-all"
-            >
-              <div className="w-full h-80 relative">
-                <Image
-                  src={product.image}
-                  alt={product.title}
-                  fill
-                  className="object-contain absolute dark:backdrop-invert"
-                />
-              </div>
-              <h2 className="text-lg font-semibold line-clamp-2">
-                {product.title}
-              </h2>
-              <p className="text-sm text-gray-500">{product.category}</p>
-              <p className="text-lg font-semibold">${product.price}</p>
-              <p className="text-sm line-clamp-3">{product.description}</p>
-            </Link>
-          ))}
-        </div>
+        {filteredProducts.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-11/12 m-auto">
+            {filteredProducts.map((product) => (
+              <Link
+                key={product.id}
+                href={`/products/${product.id}`}
+                className="flex flex-col justify-between gap-2 p-3 border-2 border-[#F9B31B] rounded-md text-center hover:shadow-2xl hover:scale-95 transition-all"
+              >
+                <div className="w-full h-80 relative">
+                  <Image
+                    src={product.image}
+                    alt={product.title}
+                    fill
+                    className="object-contain absolute dark:backdrop-invert"
+                  />
+                </div>
+                <h2 className="text-lg font-semibold line-clamp-2">
+                  {product.title}
+                </h2>
+                <p className="text-sm text-gray-500">{product.category}</p>
+                <p className="text-lg font-semibold">${product.price}</p>
+                <p className="text-sm line-clamp-3">{product.description}</p>
+              </Link>
+            ))}
+          </div>
+        ) : (
+          <p className="text-center text-2xl font-semibold">
+            No products found..!
+          </p>
+        )}
       </div>
     </div>
   );

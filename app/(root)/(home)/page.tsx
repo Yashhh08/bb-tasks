@@ -19,8 +19,6 @@ export default function Home() {
       <section>
         <FakeStore />
       </section>
-
-      <section className="h-[50vh]"></section>
     </div>
   );
 }

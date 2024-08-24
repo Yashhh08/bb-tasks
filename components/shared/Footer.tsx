@@ -11,6 +11,7 @@ const Footer = () => {
           alt="Bombay Blokes"
           width={214}
           height={31}
+          className="dark:backdrop-invert"
         />
       </Link>
 

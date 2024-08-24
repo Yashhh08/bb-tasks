@@ -16,7 +16,11 @@ const FakeStore = async () => {
         Fake Store Products
       </h1>
 
-      <ProductList initialProducts={products} categories={categories} />
+      {products && categories ? (
+        <ProductList initialProducts={products} categories={categories} />
+      ) : (
+        <p className="text-center">Technical Error..!</p>
+      )}
     </div>
   );
 };

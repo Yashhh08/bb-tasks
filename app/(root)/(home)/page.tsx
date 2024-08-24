@@ -1,3 +1,4 @@
+import FakeStore from "@/components/shared/FakeStore";
 import FormSection from "@/components/shared/FormSection";
 import ToggleTheme from "@/components/shared/ToggleTheme";
 
@@ -10,9 +11,13 @@ export default function Home() {
         <FormSection />
       </section>
 
-      <section className="flex justify-center items-center gap-3">
+      <section className="flex justify-center items-center gap-3 border py-5 border-x-0 border-y-[#F9B31B] w-11/12 m-auto">
         Toggle Theme using context API
         <ToggleTheme />
+      </section>
+
+      <section>
+        <FakeStore />
       </section>
 
       <section className="h-[50vh]"></section>

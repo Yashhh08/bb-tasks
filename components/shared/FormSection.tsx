@@ -20,7 +20,7 @@ const FormSection = () => {
 
         <p className="font-semibold text-3xl md:text-5xl text-center">
           Let's take this ride{" "}
-          <span className="bg-[#F9B31B] rounded-lg leading-normal">
+          <span className="bg-[#F9B31B] rounded-lg leading-normal px-1">
             together
           </span>
         </p>
